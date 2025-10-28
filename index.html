@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="author" content="Israel del Angel (@mexwebdev21)" />
+
+  <meta name="theme-color" content="#151515" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Untitled-5.png" />
+
+  <link rel="stylesheet" href="./js/photoswipe/dist/photoswipe.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+
+  <title>Hussin Maghrabi | Web Developer</title>
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <header class="header">
+        <a href="#" class="header__logo" aria-label="Hussin Maghrabi - Home">
+            <img src="assets/images/logos/Untitled-2.png" class="logo-img">
+        </a>
+        <style>
+            .logo-img {
+                width: 25%; /* Default width for full screen and tablet */
+            }
+
+            @media only screen and (max-width: 768px) {
+                .logo-img {
+                    width: 82% !important; /* Full width on mobile screens */
+                }
+                .header__logo{
+                    text-align: center;
+                }
+            }
+        </style>
+      <div class="header__social-box">
+        <a href="https://github.com/HussienMaghrabi" class="header__social-link"
+          aria-label="Click here to check out my projects on Github" title="Opens in a new tab" target="_blank"
+          rel="noopener noreferrer"><span class="visually-hidden">Click here to check out my projects on Github</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25" height="24"
+            aria-hidden="true">
+            <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+              d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+          </svg></a>
+
+        <a href="https://www.linkedin.com/in/hussein-maghrabi/" class="header__social-link"
+          aria-label="Click here to get a hold of me on Linkedin" title="Opens in a new tab" target="_blank"
+          rel="noopener noreferrer"><span class="visually-hidden">Click here to get a hold of me on Linkedin</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25" height="24"
+            aria-hidden="true">
+            <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+              d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+          </svg></a>
+
+        <a href="https://api.whatsapp.com/send?phone=201119946656" class="header__social-link"
+          aria-label="Click here to text me on Whatsapp" title="Opens in a new tab" target="_blank"
+          rel="noopener noreferrer"><span class="visually-hidden">Click here to text me on Whatsapp"</span>
+          <svg class="header__social-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+            viewBox="0 0 50 50">
+            <path class="header__social-logo" fill="#FFF"
+              d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
+            </path>
+          </svg>
+        </a>
+
+        <a href="mailto:elmaghrabihussien@gmail.com" class="header__social-link" aria-label="Click here to email me"
+          title="Opens in a new tab" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">Click here
+            to email me</span>
+          <svg class="header__social-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Rounded" transform="translate(-782.000000, -1220.000000)">
+                <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                  <g id="-Round-/-Communication-/-email" transform="translate(680.000000, 54.000000)">
+                    <g transform="translate(0.000000, 0.000000)">
+                      <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                      <path class="header__social-logo" fill="#fff"
+                        d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M19.6,8.25 L12.53,12.67 C12.21,12.87 11.79,12.87 11.47,12.67 L4.4,8.25 C4.15,8.09 4,7.82 4,7.53 C4,6.86 4.73,6.46 5.3,6.81 L12,11 L18.7,6.81 C19.27,6.46 20,6.86 20,7.53 C20,7.82 19.85,8.09 19.6,8.25 Z">
+                      </path>
+                      </path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section-hero center-text">
+          <picture class="hero__pic">
+              <source srcset="assets/images/Maghrabi.png" media="(min-width:
+            56em)" />
+              <source srcset="assets/images/Maghrabi.png" media="(min-width: 42em)" style="
+    padding-top: 153px;
+"/>
+
+              <img srcset="/assets/images/Maghrabi.png" alt="Hussien Maghrabi" src="/assets/images/Maghrabi.png"
+                   class="hero__img" style="
+    padding-top: 153px;
+"/>
+          </picture>
+          <div class="hero__text-box">
+              <h1 class="heading-primary">
+                  I'm
+                  <a href="https://www.linkedin.com/in/hussein-maghrabi/" class="underline"
+                     title="Opens my Linkedin profile in a new tab" target="_blank" rel="noopener noreferrer">Hussien
+                      Maghrabi</a>.
+              </h1>
+              <p class="hero__text">
+                  I am an experienced PHP and Laravel developer with a strong track record of delivering high-quality web applications since 2018. My work spans a variety of projects, including e-commerce, educational platforms, and service-oriented applications. I specialize in backend development with PHP and Laravel, and I'm skilled in frontend technologies like Bootstrap and JavaScript. I am passionate about building clean, efficient, and user-centric solutions.
+              </p>
+              <a href="#contact" class="btn btn--green">Contact me</a>
+          </div>
+      </section>
+
+      <section class="section-experience center-text">
+        <h2 class="visually-hidden">Experience Section</h2>
+        <div class="experience__text-box">
+          <h3 class="heading-secondary">FRONT END</h3>
+          <p>Crafted responsive and dynamic user interfaces using React, delivering engaging and seamless web
+            experiences.</p>
+        </div>
+        <div class="experience__text-box">
+          <h3 class="heading-secondary">BACK END</h3>
+          <p>Engineered robust server logic with Laravel, ensuring efficient data handling and high-performing backend
+            functionality.</p>
+        </div>
+        <div class="experience__text-box">
+          <h3 class="heading-secondary">API'S</h3>
+          <p>Built a seamless API using Laravel, enabling efficient communication between applications and enhancing
+            data accessibility.</p>
+        </div>
+
+      </section>
+
+      <section class="section-projects">
+        <div class="projects__title-box">
+          <p class="projects-title">Projects</p>
+          <a href="#contact" class="btn btn--green">Contact me</a>
+        </div>
+
+        <div class="projects__boxes">
+            <!-- VisionIQ -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/visioniq.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/visioniq.png" alt="VisionIQ Thumbnail" src="./assets/images/visioniq.png"
+                             class="projects__img" />
+                    </picture>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">VisionIQ</h2>
+                    <div class="description">
+                        Developed VisionIQ, an enterprise-grade multi-tenant business management system for organizations managing multiple brands, branches, AI devices, and security operations. The system demonstrates senior-level software engineering with clean architecture, extensive documentation (1,800+ lines), and production-ready features including service layer pattern, repository pattern, policy-based authorization, tag-based caching, queue jobs, and comprehensive RESTful API with 46 form request validations.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel 10</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Redis</li>
+                        <li class="projects__language">RESTful API</li>
+                        <li class="projects__language">Queue Jobs</li>
+                        <li class="projects__language">Spatie</li>
+                        <li class="projects__language">PHPStan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Guide Me -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/guideme.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/guideme.png" alt="Guide Me Thumbnail" src="./assets/images/guideme.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://play.google.com/store/apps/details?id=guide.user" class="btn btn--green" target="_blank" rel="noopener noreferrer">View User App</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Guide Me</h2>
+                    <div class="description">
+                        Developed Guide Me, a comprehensive tourism platform connecting travelers with professional tour guides. Built the complete backend infrastructure including RESTful API, admin dashboard, and real-time features using Firebase/Firestore. The system manages dual mobile applications (User app and Guide app) with features including trip booking, real-time GPS tracking, payment processing, multi-language support, push notifications, and role-based access control. Successfully deployed to production serving 54 users, 46 guides, and managing 195+ trips.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel 10</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Firebase</li>
+                        <li class="projects__language">Firestore</li>
+                        <li class="projects__language">RESTful API</li>
+                        <li class="projects__language">GPS Tracking</li>
+                        <li class="projects__language">Spatie</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://play.google.com/store/apps/details?id=guide.user" class="btn btn--green" target="_blank" rel="noopener noreferrer">User App</a>
+                    <a href="https://play.google.com/store/apps/details?id=guide.tour" class="btn btn--green" target="_blank" rel="noopener noreferrer" style="margin-top: 10px;">Guide App</a>
+                </div>
+            </div>
+
+            <!-- Tickets -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/tickets.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/tickets.png" alt="Tickets Helpdesk System Thumbnail" src="./assets/images/tickets.png"
+                             class="projects__img" />
+                    </picture>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Tickets Helpdesk System</h2>
+                    <div class="description">
+                        Developed a comprehensive enterprise-level helpdesk and ticketing system using Laravel 10 and Filament v2. The platform features a sophisticated 4-tier role-based access control system (Super Admin, Admin Unit, Staff Unit, General User) managing multi-department operations across 31 stores and 18 areas. Successfully deployed to production handling 821+ closed tickets with advanced features including ticket prioritization, file attachments, email notifications, activity logging, analytics with Apex Charts, Excel export functionality, and comprehensive reporting. The system includes detailed database design documentation and UML diagrams demonstrating enterprise-grade architecture.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel 10</li>
+                        <li class="projects__language">Filament v2</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Spatie</li>
+                        <li class="projects__language">Apex Charts</li>
+                        <li class="projects__language">Excel Export</li>
+                        <li class="projects__language">Larastan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Al Waly Group -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/alwaly.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/alwaly.png" alt="Al Waly Group Thumbnail" src="./assets/images/alwaly.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://alwalygroup.com/" class="btn btn--green" target="_blank" rel="noopener noreferrer">View project</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Al Waly Group</h2>
+                    <div class="description">
+                        Designed and developed a comprehensive corporate website for Al Waly Construction Group, one of Egypt's leading construction companies established in 1958. Created a custom WordPress theme featuring a modern, professional design with multi-language support (English/Arabic). The website showcases the company's extensive portfolio including construction, ready-mixed concrete, urban development, and piling services across international operations in Egypt, UAE, Saudi Arabia, and Iraq. Implemented responsive design, interactive service cards, company statistics display ($1.4B project value, 500+ completed projects), contact forms, location maps, and comprehensive company information sections.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">WordPress</li>
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Custom Theme</li>
+                        <li class="projects__language">HTML5</li>
+                        <li class="projects__language">CSS3</li>
+                        <li class="projects__language">JavaScript</li>
+                        <li class="projects__language">Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://alwalygroup.com/" class="btn btn--green" target="_blank" rel="noopener noreferrer">View project</a>
+                </div>
+            </div>
+
+            <!-- Bayt Alebaa -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/10.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/10.png" alt="Bayt Alebaa Thumbnail" src="./assets/images/10.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://baytalebaa.com/" class="btn btn--green">View project</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Bayt Alebaa</h2>
+                    <div class="description">
+                        Contributed to the development of BAYT ALEBAA, an E-commerce platform specializing in the trading and manufacturing of building materials and finishes. The platform offers a wide range of products, including sanitary ware, ceramics, porcelain, granite, decoration items, and kitchens. BAYT ALEBAA is part of the Al Qimam Holding Group, known for its commitment to quality and innovation.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Magento</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://baytalebaa.com/" class="btn btn--green">View project</a>
+                </div>
+            </div>
+
+            <!-- NUMA.sa  -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/2.png" media="(min-width: 63em)" />
+
+                        <img srcset="./assets/images/2.png" alt="Numa.sa Thumbnail" src="./assets/images/2.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://numo.sa/ar" class="btn btn--green">View project</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Numo.sa</h2>
+                    <div class="description">
+                        Contributed to the development of a state-of-the-art Learning Management System (LMS) for NUMO.SA, supporting Saudi Arabia's Vision 2030 to enhance human resource development. This project involved creating a dynamic and interactive platform using PHP and Laravel, ensuring robust performance and scalability. The LMS integrates real-time updates with Livewire, a responsive design with Bootstrap, and advanced user interactions using JavaScript, jQuery, and AJAX.
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">Livewire</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Spatie</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://numo.sa/ar" class="btn btn--green">View project</a>
+                </div>
+            </div>
+
+            <!-- Cambridgetcb -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/8.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/8.png" alt="Cambridgetcb Thumbnail" src="./assets/images/8.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://cambridgetcb.com/"  class="btn btn--green">View project</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Cambridgetcb</h2>
+                    <div class="description">
+                        Contributed to the development of CAMBRIDGETCB, an online educational platform that offers a wide range of training courses across various durations, empowering learners to enhance their skills and achieve their professional goals. The platform combines modern technologies to deliver an engaging and efficient learning experience.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">Livewire</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Spatie</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://cambridgetcb.com/" class="btn btn--green">View project</a>
+                </div>
+            </div>
+
+            <!-- Spot -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/7.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/7.png" alt="Spot Thumbnail" src="./assets/images/7.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://github.com/HussienMaghrabi/Spot" class="btn btn--green">View code</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Spot</h2>
+                    <div class="description">
+                        Contributed to the development of SPOT, a dynamic chat application designed for making new friends, voice chatting, singing together, and playing games with people from around the world. The platform combines various technologies to create an engaging and interactive social experience.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Laravel Collective</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://github.com/HussienMaghrabi/Spot" class="btn btn--green">View code</a>
+                </div>
+            </div>
+
+            <!-- Bazar -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/6.png" media="(max-width: 63em)" />
+
+                        <img srcset="./assets/images/6.png" alt="Bazar Thumbnail" src="./assets/images/6.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay">
+                        <a href="https://github.com/HussienMaghrabi/bazar" class="btn btn--green">View code</a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Bazar </h2>
+                    <div class="description">
+                        Contributed to the development of BAZAR, an application designed for individuals and businesses to post and browse classified ads. The platform provides a seamless experience for users to buy, sell, and trade goods and services.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Laravel Collective</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <a href="https://github.com/HussienMaghrabi/bazar" class="btn btn--green">View code</a>
+                </div>
+            </div>
+
+            <!-- pets -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/3.png" media="(min-width: 63em)" />
+
+                        <img srcset="./assets/images/3.png" alt="Design Portfolio Thumbnail" src="./assets/images/dawaa.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay" id="pets-gallery">
+                        <a data-pswp-src="./assets/images/gallery/egy-pets/EgyPets-1.png" data-pswp-height="2200" data-pswp-width="1242">
+                            <button class="btn btn--green">View project</button>
+                        </a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-1.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-2.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-3.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-4.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-5.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-6.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-7.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-8.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-9.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-10.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-11.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-12.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-13.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-14.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-15.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-16.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/egy-pets/EgyPets-17.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Egy Pets</h2>
+                    <div class="description">
+                        Developed EGY PETS, an application that connects users with animal husbandry services, veterinarians, pet shops, training academies, farms, and pet hotels. The platform allows users to search for the nearest veterinarian or open store on a map, sell their pets, or find new animals to adopt.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Laravel Collective</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <button class="btn btn--green" onclick="document.querySelector('#pets-gallery .btn--green').click(); return false;">View project</>
+                </div>
+            </div>
+
+            <!-- Gold Store -->
+            <div class="projects__box">
+                <div class="projects__pic-box">
+                    <picture class="projects__pic">
+                        <source srcset="./assets/images/11.png" media="(max-width: 63em)" />
+                        <img srcset="./assets/images/11.png" alt="Gold Store Thumbnail" src="./assets/images/11.png"
+                             class="projects__img" />
+                    </picture>
+                    <div class="projects__overlay" id="gold-gallery">
+                        <a data-pswp-src="./assets/images/gallery/Gold-Store/GoldStore-1.png" data-pswp-height="2200" data-pswp-width="1242">
+                            <button class="btn btn--green">View project</button>
+                        </a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-2.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-3.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-4.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-5.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-6.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-7.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-8.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-9.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                        <a target="_blank" class="hidden" href="./assets/images/gallery/Gold-Store/GoldStore-10.png"
+                           data-pswp-width="1242" data-pswp-height="2200"></a>
+                    </div>
+                </div>
+                <div class="projects__project-title">
+                    <h2 class="heading-tertiary">Gold Store</h2>
+                    <div class="description">
+                        Developed GOLD STORE, the leading application for buying and selling gold and silver in Kuwait. The platform provides users with a reliable and secure marketplace for trading precious metals.
+
+                    </div>
+                    <ul class="projects__languages flex">
+                        <li class="projects__language">PHP</li>
+                        <li class="projects__language">Laravel</li>
+                        <li class="projects__language">MySQL</li>
+                        <li class="projects__language">Bootstrap</li>
+                        <li class="projects__language">Javascript</li>
+                        <li class="projects__language">jQuery</li>
+                        <li class="projects__language">AJAX</li>
+                        <li class="projects__language">Font Awesome</li>
+                        <li class="projects__language">Laravel Collective</li>
+                    </ul>
+                </div>
+                <div class="projects__links flex column">
+                    <button class="btn btn--green" onclick="document.querySelector('#gold-gallery .btn--green').click(); return false;">View project</button>
+                </div>
+            </div>
+
+          <!-- HUMHUM -->
+          <div class="projects__box">
+            <div class="projects__pic-box">
+              <picture class="projects__pic">
+                <source srcset="./assets/images/1.png" media="(min-width: 63em)" />
+                <img srcset="./assets/images/1.png" alt="HUMHUM Thumbnail" src="./assets/images/humhum.png"
+                  class="projects__img" />
+              </picture>
+              <div class="projects__overlay" id="humhum-gallery">
+                <a data-pswp-src="./assets/images/gallery/HumHum/HumHum-1.png" data-pswp-height="2200" data-pswp-width="1242" class="btn btn--green">
+                  <button class="btn btn--green">View project</button>
+                </a>
+                <a target="_blank" class="hidden" data-pswp-src="./assets/images/gallery/HumHum/HumHum-2.png" data-pswp-height="2200" data-pswp-width="1242" class="btn btn--green"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-3.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-4.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-5.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-6.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-7.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-8.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-9.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-10.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-11.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/HumHum/HumHum-12.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+              </div>
+            </div>
+            <div class="projects__project-title">
+              <h2 class="heading-tertiary">HumHum Eg</h2>
+              <div class="description">
+                  Developed HUMHUM EG, a convenient application for purchasing and delivering daily goods. The platform allows users to place orders for their daily necessities and ensures quick delivery right to their doorstep.
+
+              </div>
+              <ul class="projects__languages flex">
+                <li class="projects__language">PHP</li>
+                <li class="projects__language">Laravel</li>
+                <li class="projects__language">MySQL</li>
+                <li class="projects__language">Bootstrap</li>
+                <li class="projects__language">Javascript</li>
+                <li class="projects__language">jQuery</li>
+                <li class="projects__language">AJAX</li>
+                <li class="projects__language">Font Awesome</li>
+                <li class="projects__language">Laravel Collective</li>
+              </ul>
+            </div>
+            <div class="projects__links flex column">
+              <button class="btn btn--green" onclick="document.querySelector('#humhum-gallery .btn--green').click(); return false;">View project</>
+            </div>
+          </div>
+
+          <!-- Sweet & Coffee -->
+          <div class="projects__box">
+            <div class="projects__pic-box">
+              <picture class="projects__pic">
+                <source srcset="./assets/images/5.png" media="(min-width: 63em)" />
+
+                <img srcset="./assets/images/5.png" alt="Sweet & Coffee Thumbnail" src="./assets/images/5.png"
+                  class="projects__img" />
+              </picture>
+              <div class="projects__overlay" id="sweet-gallery">
+                <a data-pswp-src="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-1.png" data-pswp-height="2200" data-pswp-width="1242">
+                  <button class="btn btn--green">View project</button>
+                </a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-2.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-3.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-4.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-5.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-6.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-7.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-8.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-9.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-10.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-11.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+                  <a target="_blank" class="hidden" href="./assets/images/gallery/Sweet-And-Coffee/SweetAndCoffee-12.png"
+                    data-pswp-width="1242" data-pswp-height="2200"></a>
+              </div>
+            </div>
+            <div class="projects__project-title">
+              <h2 class="heading-tertiary">Sweet & Coffee</h2>
+              <div class="description">
+                  Developed SWEET & COFFEE, an application that connects users with the best sweets from top stores, offering delivery services across Kuwait. The platform ensures users can enjoy their favorite treats delivered right to their doorstep.
+
+              </div>
+              <ul class="projects__languages flex">
+                <li class="projects__language">PHP</li>
+                <li class="projects__language">Laravel</li>
+                <li class="projects__language">MySQL</li>
+                <li class="projects__language">Bootstrap</li>
+                <li class="projects__language">Javascript</li>
+                <li class="projects__language">jQuery</li>
+                <li class="projects__language">AJAX</li>
+                <li class="projects__language">Font Awesome</li>
+                <li class="projects__language">Laravel Collective</li>
+              </ul>
+            </div>
+            <div class="projects__links flex column">
+              <button class="btn btn--green" onclick="document.querySelector('#sweet-gallery .btn--green').click(); return false;">View project</>
+            </div>
+          </div>
+
+          <!-- Daawa -->
+          <div class="projects__box">
+            <div class="projects__pic-box">
+              <picture class="projects__pic">
+                <source srcset="./assets/images/4.png" media="(min-width: 63em)" />
+
+                <img srcset="./assets/images/4.png" alt="Daawa Thumbnail" src="./assets/images/4.png"
+                  class="projects__img" />
+              </picture>
+              <div class="projects__overlay" id="daawa-gallery">
+                <a data-pswp-src="./assets/images/gallery/Daawa/Daawa-1.png" data-pswp-height="2200" data-pswp-width="1242">
+                  <button class="btn btn--green">View project</button>
+                </a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-2.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-3.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-4.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-5.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-6.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-7.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-8.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-9.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-10.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+                <a target="_blank" class="hidden" href="./assets/images/gallery/Daawa/Daawa-11.png"
+                  data-pswp-width="1242" data-pswp-height="2200"></a>
+              </div>
+            </div>
+            <div class="projects__project-title">
+              <h2 class="heading-tertiary">Daawa</h2>
+              <div class="description">
+                  Developed DAAWA, the leading application for wedding and event equipment in Kuwait. The platform provides users with access to a wide range of event supplies, ensuring a seamless and stress-free planning experience.
+
+              </div>
+              <ul class="projects__languages flex">
+                <li class="projects__language">PHP</li>
+                <li class="projects__language">Laravel</li>
+                <li class="projects__language">MySQL</li>
+                <li class="projects__language">Bootstrap</li>
+                <li class="projects__language">Javascript</li>
+                <li class="projects__language">jQuery</li>
+                <li class="projects__language">AJAX</li>
+                <li class="projects__language">Font Awesome</li>
+                <li class="projects__language">Laravel Collective</li>
+              </ul>
+            </div>
+            <div class="projects__links flex column">
+              <button class="btn btn--green" onclick="document.querySelector('#daawa-gallery .btn--green').click(); return false;">View project</button>
+            </div>
+          </div>
+
+          <!-- Resala -->
+          <div class="projects__box">
+            <div class="projects__pic-box">
+              <picture class="projects__pic">
+                <source srcset="./assets/images/9.png" media="(max-width: 63em)" />
+
+                <img srcset="./assets/images/9.png" alt="Resala Thumbnail" src="./assets/images/9.png"
+                  class="projects__img" />
+              </picture>
+              <div class="projects__overlay">
+                <a href="https://github.com/HussienMaghrabi/resala-1" class="btn btn--green">View code</a>
+              </div>
+            </div>
+            <div class="projects__project-title">
+              <h2 class="heading-tertiary">Resala</h2>
+              <div class="description">
+                  Developed RESALA application, designed for the Resala Charity Association to facilitate volunteering and donations aimed at helping families below the poverty line in Egypt. The platform streamlines the process of connecting volunteers and donors with those in need.
+
+              </div>
+              <ul class="projects__languages flex">
+                <li class="projects__language">PHP</li>
+                <li class="projects__language">Laravel</li>
+                <li class="projects__language">MySQL</li>
+                <li class="projects__language">Bootstrap</li>
+                <li class="projects__language">Javascript</li>
+                <li class="projects__language">jQuery</li>
+                <li class="projects__language">AJAX</li>
+                <li class="projects__language">Font Awesome</li>
+                <li class="projects__language">Laravel Collective</li>
+              </ul>
+            </div>
+            <div class="projects__links flex column">
+              <a href="https://github.com/HussienMaghrabi/resala-1" class="btn btn--green">View code</a>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <form class="form" id="contact" name="Portfolio Contact Form" method="POST" action="https://formsubmit.co/elmaghrabihussien@gmail.com">
+        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none">
+        <div class="form__heading-box center-text">
+          <p class="form__heading">Contact</p>
+          <p class="form__text">
+            I would love to hear about your project and how I could help.
+            Please fill in the form, and I’ll get back to you as soon as
+            possible.
+          </p>
+        </div>
+
+        <div class="form__groups">
+          <div class="form__group">
+            <input name="name" type="text" class="form__input" placeholder="NAME" id="name" autocomplete="name"
+              required />
+            <label for="name" class="form__label">NAME</label>
+            <small class="form__small">Error message</small>
+          </div>
+          <div class="form__group">
+            <input name="email" type="email" class="form__input" placeholder="EMAIL" id="email" autocomplete="email"
+              required />
+            <label for="email" class="form__label">EMAIL</label>
+            <small class="form__small">Error message</small>
+          </div>
+          <div class="form__group">
+            <textarea name="message" id="message" rows="4" class="form__input" placeholder="MESSAGE"
+              required></textarea>
+            <label for="message" class="form__label">MESSAGE</label>
+            <small class="form__small">Error message</small>
+          </div>
+          <div class="form__group right-text">
+            <button type="submit" class="btn btn--form">Send message</button>
+          </div>
+        </div>
+        <!-- adamkeyes -->
+      </form>
+
+      <div class="footer__logo-box">
+        <a href="#" class="footer__logo" title="Scrolls back to top" aria-label="Hussin Maghrabi - Home">MAGHRABI</a>
+        <div class="footer__social-box">
+          <a href="https://github.com/HussienMaghrabi" class="header__social-link"
+            aria-label="Click here to check out my projects on Github" title="Opens in a new tab" target="_blank"
+            rel="noopener noreferrer"><span class="visually-hidden">Click here to check out my projects on Github</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
+              height="24" aria-hidden="true">
+              <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+            </svg></a>
+
+          <a href="https://www.linkedin.com/in/hussein-maghrabi/" class="header__social-link"
+            aria-label="Click here to get a hold of me on Linkedin" title="Opens in a new tab" target="_blank"
+            rel="noopener noreferrer"><span class="visually-hidden">Click here to get a hold of me on Linkedin</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
+              height="24" aria-hidden="true">
+              <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+            </svg></a>
+
+          <a href="https://api.whatsapp.com/send?phone=201119946656" class="header__social-link"
+            aria-label="Click here to text me on Whatsapp" title="Opens in a new tab" target="_blank"
+            rel="noopener noreferrer"><span class="visually-hidden">Click here to text me on Whatsapp"</span>
+            <svg class="header__social-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+              viewBox="0 0 50 50">
+              <path class="header__social-logo" fill="#FFF"
+                d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
+              </path>
+            </svg>
+          </a>
+
+          <a href="mailto:hussien.maghrabi@hotmail.com" class="header__social-link" aria-label="Click here to email me"
+            title="Opens in a new tab" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">Click
+              here
+              to email me</span>
+            <svg class="header__social-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Rounded" transform="translate(-782.000000, -1220.000000)">
+                  <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                    <g id="-Round-/-Communication-/-email" transform="translate(680.000000, 54.000000)">
+                      <g transform="translate(0.000000, 0.000000)">
+                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path class="header__social-logo" fill="#fff"
+                          d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M19.6,8.25 L12.53,12.67 C12.21,12.87 11.79,12.87 11.47,12.67 L4.4,8.25 C4.15,8.09 4,7.82 4,7.53 C4,6.86 4.73,6.46 5.3,6.81 L12,11 L18.7,6.81 C19.27,6.46 20,6.86 20,7.53 C20,7.82 19.85,8.09 19.6,8.25 Z">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module">
+    import PhotoSwipeLightbox from './js/photoswipe/dist/photoswipe-lightbox.esm.js';
+    import PhotoSwipe from './js/photoswipe/dist/photoswipe.esm.js';
+
+    const lightboxForHumhum = new PhotoSwipeLightbox({
+      gallery: '#humhum-gallery',
+      children: 'a',
+      pswpModule: () => PhotoSwipe
+    });
+
+    const lightboxForPets = new PhotoSwipeLightbox({
+      gallery: '#pets-gallery',
+      children: 'a',
+      pswpModule: () => PhotoSwipe
+    });
+
+    const lightboxForsweet = new PhotoSwipeLightbox({
+      gallery: '#sweet-gallery',
+      children: 'a',
+      pswpModule: () => PhotoSwipe
+    });
+
+    const lightboxForGold = new PhotoSwipeLightbox({
+      gallery: '#gold-gallery',
+      children: 'a',
+      pswpModule: () => PhotoSwipe
+    });
+
+    const lightboxForDaawa = new PhotoSwipeLightbox({
+      gallery: '#daawa-gallery',
+      children: 'a',
+      pswpModule: () => PhotoSwipe
+    });
+
+    lightboxForHumhum.init();
+    lightboxForPets.init();
+    lightboxForsweet.init();
+    lightboxForGold.init();
+    lightboxForDaawa.init();
+
+    function openGallery(event) {
+      event.preventDefault();
+      lightbox.loadAndOpen(0);
+    }
+
+
+    document.querySelectorAll('.btn.btn--green').forEach(button => {
+      button.addEventListener('click', openGallery);
+    });
+  </script>
+</body>
+
+</html>
