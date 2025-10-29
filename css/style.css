@@ -19,6 +19,13 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 42em) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+
 .hidden{
   display: none;
 }
@@ -32,6 +39,14 @@ body {
   grid-template-columns: [full-start] minmax(1.6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.25rem) [col-end]) [center-end] minmax(1.6rem, 1fr) [full-end];
   position: relative;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 42em) {
+  .body-wrapper {
+    width: 100%;
+    max-width: 100vw;
+    grid-template-columns: [full-start] 1.6rem [center-start] 1fr [center-end] 1.6rem [full-end];
+  }
 }
 
 @media only screen and (min-width: 42em) {
@@ -52,6 +67,13 @@ body {
   grid-template-rows: min-content;
   row-gap: 8rem;
   padding-bottom: 8rem;
+}
+
+@media only screen and (max-width: 42em) {
+  .main {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (min-width: 63.5em) {
@@ -125,6 +147,13 @@ body {
   line-height: 2.6rem;
 }
 
+@media only screen and (max-width: 42em) {
+  body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
 @media only screen and (min-width: 42em) {
   body {
     font-size: 1.8rem;
@@ -148,6 +177,16 @@ body {
   letter-spacing: -0.114rem;
   line-height: 1;
   margin-bottom: 2.4rem;
+}
+
+@media only screen and (max-width: 42em) {
+  .heading-primary,
+  .projects-title,
+  .form__heading {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
 @media only screen and (min-width: 42em) {
@@ -298,6 +337,14 @@ button.btn--green {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  width: calc(100% - 3.2rem);
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 42em) {
+  .header {
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (min-width: 42em) {
@@ -392,6 +439,13 @@ button.btn--green {
   grid-template-columns: 1fr;
   gap: 4rem;
   position: relative;
+}
+
+@media only screen and (max-width: 42em) {
+  .section-hero {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 .section-hero::before {
@@ -583,17 +637,36 @@ button.btn--green {
   }
 }
 
+.hero__text-box {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 42em) {
+  .hero__text-box {
+    padding: 0 1rem;
+  }
+}
+
 @media only screen and (min-width: 42em) {
   .hero__text-box {
     grid-column: 1 / 2;
     grid-row: 1;
     position: relative;
     z-index: 1;
+    padding: 0;
   }
 }
 
 .hero__text {
   margin-bottom: 2.4rem;
+}
+
+@media only screen and (max-width: 42em) {
+  .hero__text {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 }
 
 @media only screen and (min-width: 50.5em) {
@@ -635,6 +708,13 @@ button.btn--green {
   display: grid;
   row-gap: 2.4rem;
   position: relative;
+}
+
+@media only screen and (max-width: 42em) {
+  .section-experience {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
 
 @media only screen and (min-width: 42em) {
@@ -695,6 +775,15 @@ button.btn--green {
   .section-experience::before {
     left: 97.9rem;
     bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 42em) {
+  .experience__text-box {
+    max-width: 100%;
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
