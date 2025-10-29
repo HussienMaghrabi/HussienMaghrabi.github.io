@@ -800,102 +800,123 @@
     </main>
 
     <footer class="footer">
-      <form class="form" id="contact" name="Portfolio Contact Form" method="POST" action="https://formsubmit.co/elmaghrabihussien@gmail.com">
-        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none">
-        <div class="form__heading-box center-text">
-          <p class="form__heading">Contact</p>
-          <p class="form__text">
-            I would love to hear about your project and how I could help.
-            Please fill in the form, and I’ll get back to you as soon as
-            possible.
-          </p>
-        </div>
+        <form class="form" id="contact" name="Portfolio Contact Form" method="POST" action="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="853fbae6-e3b8-4997-8392-9b87827962a5">
 
-        <div class="form__groups">
-          <div class="form__group">
-            <input name="name" type="text" class="form__input" placeholder="NAME" id="name" autocomplete="name"
-              required />
-            <label for="name" class="form__label">NAME</label>
-            <small class="form__small">Error message</small>
-          </div>
-          <div class="form__group">
-            <input name="email" type="email" class="form__input" placeholder="EMAIL" id="email" autocomplete="email"
-              required />
-            <label for="email" class="form__label">EMAIL</label>
-            <small class="form__small">Error message</small>
-          </div>
-          <div class="form__group">
+            <input type="hidden" name="contant" />
+            <div class="form__heading-box center-text">
+                <p class="form__heading">Contact</p>
+                <p class="form__text">
+                    I would love to hear about your project and how I could help.
+                    Please fill in the form, and I’ll get back to you as soon as
+                    possible.
+                </p>
+            </div>
+
+            <div class="form__groups">
+                <div class="form__group">
+                    <input name="name" type="text" class="form__input" placeholder="NAME" id="name" autocomplete="name"
+                           required />
+                    <label for="name" class="form__label">NAME</label>
+                    <small class="form__small">Error message</small>
+                </div>
+                <div class="form__group">
+                    <input name="email" type="email" class="form__input" placeholder="EMAIL" id="email" autocomplete="email"
+                           required />
+                    <label for="email" class="form__label">EMAIL</label>
+                    <small class="form__small">Error message</small>
+                </div>
+                <div class="form__group">
             <textarea name="message" id="message" rows="4" class="form__input" placeholder="MESSAGE"
-              required></textarea>
-            <label for="message" class="form__label">MESSAGE</label>
-            <small class="form__small">Error message</small>
-          </div>
-          <div class="form__group right-text">
-            <button type="submit" class="btn btn--form">Send message</button>
-          </div>
-        </div>
-        <!-- adamkeyes -->
-      </form>
+                      required></textarea>
+                    <label for="message" class="form__label">MESSAGE</label>
+                    <small class="form__small">Error message</small>
+                </div>
+                <div class="form__group">
+                    <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
+                    <small class="form__small" style="display: none;">Please verify that you are not a robot.</small>
+                    <script>
+                        window.recaptchaSiteKey = '{{ config('services.recaptcha.site_key') }}';
+                    </script>
+                </div>
+                <div class="form__group right-text">
+                    <button type="submit" class="btn btn--form">Send message</button>
+                </div>
+            </div>
+            <!-- adamkeyes -->
+        </form>
 
-      <div class="footer__logo-box">
-        <a href="#" class="footer__logo" title="Scrolls back to top" aria-label="Hussin Maghrabi - Home">MAGHRABI</a>
-        <div class="footer__social-box">
-          <a href="https://github.com/HussienMaghrabi" class="header__social-link"
-            aria-label="Click here to check out my projects on Github" title="Opens in a new tab" target="_blank"
-            rel="noopener noreferrer"><span class="visually-hidden">Click here to check out my projects on Github</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
-              height="24" aria-hidden="true">
-              <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
-                d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
-            </svg></a>
 
-          <a href="https://www.linkedin.com/in/hussein-maghrabi/" class="header__social-link"
-            aria-label="Click here to get a hold of me on Linkedin" title="Opens in a new tab" target="_blank"
-            rel="noopener noreferrer"><span class="visually-hidden">Click here to get a hold of me on Linkedin</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
-              height="24" aria-hidden="true">
-              <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
-                d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
-            </svg></a>
+        <div class="footer__logo-box">
+            <a href="#" class="footer__logo" title="Scrolls back to top" aria-label="Hussin Maghrabi - Home"><img src="{{asset('logos/Untitled-2.png')}}" class="logo-img"></a>
+            <style>
+                .logo-img {
+                    width: 25%; /* Default width for full screen and tablet */
+                }
 
-          <a href="https://api.whatsapp.com/send?phone=201119946656" class="header__social-link"
-            aria-label="Click here to text me on Whatsapp" title="Opens in a new tab" target="_blank"
-            rel="noopener noreferrer"><span class="visually-hidden">Click here to text me on Whatsapp"</span>
-            <svg class="header__social-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
-              viewBox="0 0 50 50">
-              <path class="header__social-logo" fill="#FFF"
-                d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
-              </path>
-            </svg>
-          </a>
+                @media only screen and (max-width: 768px) {
+                    .logo-img {
+                        width: 40%; /* Full width on mobile screens */
+                    }
+                    .footer__logo-box {
+                        text-align: center; /* Centers the logo container */
+                    }
+                }
+            </style>
+            <div class="footer__social-box">
+                <a href="https://github.com/HussienMaghrabi" class="header__social-link"
+                   aria-label="Click here to check out my projects on Github" title="Opens in a new tab" target="_blank"
+                   rel="noopener noreferrer"><span class="visually-hidden">Click here to check out my projects on Github</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
+                         height="24" aria-hidden="true">
+                        <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+                              d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z" />
+                    </svg></a>
 
-          <a href="mailto:hussien.maghrabi@hotmail.com" class="header__social-link" aria-label="Click here to email me"
-            title="Opens in a new tab" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">Click
+                <a href="https://www.linkedin.com/in/hussein-maghrabi/" class="header__social-link"
+                   aria-label="Click here to get a hold of me on Linkedin" title="Opens in a new tab" target="_blank"
+                   rel="noopener noreferrer"><span class="visually-hidden">Click here to get a hold of me on Linkedin</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="header__social-svg" viewBox="0 0 25 24" width="25"
+                         height="24" aria-hidden="true">
+                        <path class="header__social-logo" fill="#FFF" fill-rule="evenodd"
+                              d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z" />
+                    </svg></a>
+
+                <a href="https://api.whatsapp.com/send?phone=201119946656" class="header__social-link"
+                   aria-label="Click here to text me on Whatsapp" title="Opens in a new tab" target="_blank"
+                   rel="noopener noreferrer"><span class="visually-hidden">Click here to text me on Whatsapp"</span>
+                    <svg class="header__social-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                         viewBox="0 0 50 50">
+                        <path class="header__social-logo" fill="#FFF"
+                              d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="mailto:hussien.maghrabi@hotmail.com" class="header__social-link" aria-label="Click here to email me"
+                   title="Opens in a new tab" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">Click
               here
               to email me</span>
-            <svg class="header__social-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="Rounded" transform="translate(-782.000000, -1220.000000)">
-                  <g id="Communication" transform="translate(100.000000, 1162.000000)">
-                    <g id="-Round-/-Communication-/-email" transform="translate(680.000000, 54.000000)">
-                      <g transform="translate(0.000000, 0.000000)">
-                        <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
-                        <path class="header__social-logo" fill="#fff"
-                          d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M19.6,8.25 L12.53,12.67 C12.21,12.87 11.79,12.87 11.47,12.67 L4.4,8.25 C4.15,8.09 4,7.82 4,7.53 C4,6.86 4.73,6.46 5.3,6.81 L12,11 L18.7,6.81 C19.27,6.46 20,6.86 20,7.53 C20,7.82 19.85,8.09 19.6,8.25 Z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </a>
+                    <svg class="header__social-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Rounded" transform="translate(-782.000000, -1220.000000)">
+                                <g id="Communication" transform="translate(100.000000, 1162.000000)">
+                                    <g id="-Round-/-Communication-/-email" transform="translate(680.000000, 54.000000)">
+                                        <g transform="translate(0.000000, 0.000000)">
+                                            <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                                            <path class="header__social-logo" fill="#fff"
+                                                  d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M19.6,8.25 L12.53,12.67 C12.21,12.87 11.79,12.87 11.47,12.67 L4.4,8.25 C4.15,8.09 4,7.82 4,7.53 C4,6.86 4.73,6.46 5.3,6.81 L12,11 L18.7,6.81 C19.27,6.46 20,6.86 20,7.53 C20,7.82 19.85,8.09 19.6,8.25 Z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
     </footer>
   </div>
 
